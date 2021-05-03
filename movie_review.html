@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <script src="Movie_Review.js"></script>
+</head>
+
+<body>
+
+    <div align="center" style="margin-top:10%" id="login-div">
+        <table border="1">
+            <tr>
+                <td colspan="2" align="center">Login...</td>
+            </tr>
+            <tr>
+                <td align="center">Username </td>
+                <td align="center"><input type="textbox" id="username" value="mani"></td>
+            </tr>
+            <tr>
+                <td align="center">Password </td>
+                <td align="center"><input type="password" id="password" value="12345"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="button" value="Login" onclick="validateLogin();"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="movie-div" align="center" style="display:none">
+        <h1>Movie Info Summary</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Average Rating</th>
+                    <th>Comment</th>
+                    <th>Add Review</th>
+                    <tr>
+            </thead>
+            <tbody id="movieTable">
+            </tbody>
+        </table>
+    </div>
+    <div id="addreview-div" align="center" style="display:none">
+        <h1>Add Review</h1>
+        <table border="1">
+            <tr>
+                <td>Movie Name</td>
+                <td><span id="movieName"></span></td>
+            </tr>
+            <tr>
+                <td>Rating</td>
+                <td>
+                    <input type="radio" value="1" name="rating" id="rating1">1
+                    <input type="radio" value="2" name="rating" id="rating2">2
+                    <input type="radio" value="3" name="rating" id="rating3">3
+                    <input type="radio" value="4" name="rating" id="rating4">4
+                    <input type="radio" value="5" checked name="rating" id="rating5">5
+                </td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td><textarea id="reviewcomment" style="margin: 0px; height: 91px; width: 184px;"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="button" onclick="saveRevieew();" value="Save Review"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
